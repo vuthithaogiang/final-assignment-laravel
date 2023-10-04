@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get("/", [App\Http\Controllers\HomeController::class, "home"]);
+
+Route::get("/student/create", [App\Http\Controllers\HomeController::class, "form"]);
+Route::post("/student/create", [App\Http\Controllers\HomeController::class, "create"]);
