@@ -19,4 +19,5 @@ class Student extends Model
         "address",
         "telephone"
     ];
+
 }

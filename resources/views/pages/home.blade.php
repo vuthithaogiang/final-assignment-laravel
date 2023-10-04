@@ -41,7 +41,7 @@
                         <tbody>
                         @foreach($students as $item)
                             <tr>
-                                <td>{{$item->sid}}</td>
+                                <td>{!! $item->sid !!}</td>
                                 <td>{{$item->created_at}}</td>
                                 <td>{{$item->name}}</td>
                                 <td>{{$item->age}}</td>
