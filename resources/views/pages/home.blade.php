@@ -2,6 +2,11 @@
 
 @section("title")
     <h1>List Students</h1>
+    @if(session()->has("success"))
+        <div class="alter alert-success" role="alert">
+            {{session("success")}}
+        </div>
+    @endif
 @endsection
 @section("main")
 
